@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html lang="pt-br">
+
+<head>
+    <title>Formulário de Pedidos</title>
+    <meta charset="utf-8" />
+    <script src="pedidos.js"></script>
+
+</head>
+<body>
+<form name="meu_form">
+    <h1>Confirme Seu pedido!</h1>
+
+
+        <p class="nome">
+            <input type="text" id="name_id" placeholder="Fulano" required="required" name="">
+            <label for="nome">Nome</label>
+        </p>
+        <p class="telefone">
+            <input type="text" id="tel_id" placeholder="(xx)xxx-xx-xx-xx" name="fone" />
+            <label for="fone">Telefone</label>
+        </p>
+        <p class="conta">
+            <input type="text" id="dado_id" placeholder="xxxx-x" name="dado_banco" />
+            <label for="dado_banco">Dados bancários</label>
+        </p>
+        <p>
+            <input type="email" id="email_id" placeholder="fulano@mail.com" name="email" />
+            <label for="email">Email</label>
+        </p>
+        <p>
+            <textarea placeholder="Deixe sua opnião sobre o atendimento"></textarea>
+        </p>
+        <p class="submit">
+            <input type="submit" onclick="enviar_pedido();" value="Enviar" />
+
+        </p>
+
+    </form>
+</body>
+
+
+</html>
